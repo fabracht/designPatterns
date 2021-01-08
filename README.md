@@ -25,6 +25,8 @@ WARNING WINDOWS USERS: Console applications in windows close immediately after t
 
 ## Where would you use such implementations? Here are some basic but useful examples.
 
+### Singleton
+
 -     When working with a centralized system (for example a database)
 -     When maintaining a common log file
 -     When maintaining a thread pool in a multithreaded environment
