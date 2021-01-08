@@ -22,3 +22,10 @@ $ dotnet run
 ```
 
 WARNING WINDOWS USERS: Console applications in windows close immediately after they finish running. If you are running dotnet on windows, add a Console.Read() to the end of each Main() for each project.
+
+## Where would you use such implementations? Here are some basic but useful examples.
+
+-     When working with a centralized system (for example a database)
+-     When maintaining a common log file
+-     When maintaining a thread pool in a multithreaded environment
+-     When implementing a caching mechanism or device drivers, and so forth
