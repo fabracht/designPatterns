@@ -23,7 +23,7 @@ $ dotnet run
 
 WARNING WINDOWS USERS: Console applications in windows close immediately after they finish running. If you are running dotnet on windows, add a Console.Read() to the end of each Main() for each project.
 
-## Where would you use such implementations? Here are some basic but useful examples.
+## Where would you use such implementations? Here are some basic but useful topics to remember about each design.
 
 ### Singleton
 
@@ -31,3 +31,18 @@ WARNING WINDOWS USERS: Console applications in windows close immediately after t
 -     When maintaining a common log file
 -     When maintaining a thread pool in a multithreaded environment
 -     When implementing a caching mechanism or device drivers, and so forth
+
+### Prototype with Factory
+
+Shallow copy version. (MemberwiseClone version)
+
+#### Some observations on the advantages of using this pattern
+
+-     Whenever you don't want to modify the existing object, you can clone it and experiment on that.
+-     You can include and discard products easily
+-     You can focus on the key activities rather than focusing on complicated instance creation processes.
+
+There are some caveats to the this pattern.
+
+- Each subclass needs to implement the cloning or copying mechanism
+- If the object doesn't support copying, things can get tricky.
