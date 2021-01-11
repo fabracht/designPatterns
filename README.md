@@ -39,10 +39,11 @@ Shallow copy version. (MemberwiseClone version)
 #### Some observations on the advantages of using this pattern
 
 -     Whenever you don't want to modify the existing object, you can clone it and experiment on that.
--     You can include and discard products easily
--     You can focus on the key activities rather than focusing on complicated instance creation processes.
 
-There are some caveats to the this pattern.
+*     You can include and discard products easily
+*     You can focus on the key activities rather than focusing on complicated instance creation processes.
 
-- Each subclass needs to implement the cloning or copying mechanism
-- If the object doesn't support copying, things can get tricky.
+- There are some caveats to the this pattern.
+
+* Each subclass needs to implement the cloning or copying mechanism
+* If the object doesn't support copying, things can get tricky.
