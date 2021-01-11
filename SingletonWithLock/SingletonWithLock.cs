@@ -2,7 +2,9 @@ namespace SingletonWithLock
 {
     /* This singleton implementation makes it multithread safe 
     by the use of a lock.
-    The sealed modifier prevents inheritance
+    The sealed modifier prevents inheritance, since we have a 
+    private, we don't actually need to worry about this, but 
+    it's (from what I read) considered good practice.
     We don't won't people inheriting and overriding stuff */
     public sealed class SingletonWithLocks
     {
