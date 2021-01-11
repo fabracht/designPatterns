@@ -86,7 +86,6 @@ namespace PrototypeWithFactory
             {
                 lock (lockObject)
                 {
-
                     if (kia == null)
                     {
                         kia = new KiaCar("Green Kia");
