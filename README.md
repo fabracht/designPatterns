@@ -64,3 +64,6 @@ Here are some suggestions from the MSDN community.
 * When you have multiple versions of components, use an abstract class. Once you update the base class, all derived classes are updated automatically. The interface, on the other hand, should not be changed once created.
 
 * When the functionalities are widespread among dissimilar/unrelated objects, use an interface. Abstract classes should be used for closely related objects which share common functionalities.
+
+#### Another implementation of the builderPattern is in the builderPatter folder (yes, I forgot the "n")
+This implementation shows a more concrete example on how you could use the builder pattern to build html elements.
