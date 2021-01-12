@@ -45,3 +45,22 @@ Shallow copy version. (MemberwiseClone version)
 
 * Each subclass needs to implement the cloning or copying mechanism
 * If the object doesn't support copying, things can get tricky.
+
+### BuilderPattern (motorcycle and car builder, simple example)
+This is an implementation of a builder pattern for assembly of cars and motorcycle.
+
+* The builder pattern is a fancy way of hiding the implementation details of the underlying construction process. The Director class makes it seem that your process only relies on that one method that actually gets the product. 
+* Using this pattern, the same construction process can produce different products
+
+#### Drawbacks of the builder pattern
+* Not the best option to deal with mutable objects.
+* Some duplication of code may be necessary.
+* Each type of product needs its own concrete builder.
+
+#### Trivia: Can I use an abstract class instead of an interface?
+Short answer, yes. It's up to you to decide, based on your own implementation, which is best.
+Here are some suggestions from the MSDN community.
+
+* When you have multiple versions of components, use an abstract class. Once you update the base class, all derived classes are updated automatically. The interface, on the other hand, should not be changed once created.
+
+* When the functionalities are widespread among dissimilar/unrelated objects, use an interface. Abstract classes should be used for closely related objects which share common functionalities.

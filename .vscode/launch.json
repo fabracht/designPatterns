@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/factoryPattern/bin/Debug/net5.0/factoryPattern.dll",
+            "program": "${workspaceFolder}/BuilderPattern/bin/Debug/net5.0/BuilderPattern.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/factoryPattern",
+            "cwd": "${workspaceFolder}/BuilderPattern",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
